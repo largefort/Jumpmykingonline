@@ -1,0 +1,30 @@
+{
+  "name": "Jump my king",
+  "short_name": "Jump my king",
+  "id": "com.jafetegill.jumpmyking",
+  "description": "",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": [{
+        "src": "459cdce732b187d2cb88ccc860b4b9e7cbdae2aee9be230c95895c0029cb503f_King_Idle_1.png",
+        "sizes": "36x36"
+      },{
+        "src": "459cdce732b187d2cb88ccc860b4b9e7cbdae2aee9be230c95895c0029cb503f_King_Idle_1.png",
+        "sizes": "48x48"
+      },{
+        "src": "459cdce732b187d2cb88ccc860b4b9e7cbdae2aee9be230c95895c0029cb503f_King_Idle_1.png",
+        "sizes": "72x72"
+      },{
+        "src": "459cdce732b187d2cb88ccc860b4b9e7cbdae2aee9be230c95895c0029cb503f_King_Idle_1.png",
+        "sizes": "96x96"
+      },{
+        "src": "d3205e0a55e27a51e972d852506053cc96216b4cbc0d739477ca4a6dca227192_King_Idle_2.png",
+        "sizes": "144x144"
+      },{
+        "src": "459cdce732b187d2cb88ccc860b4b9e7cbdae2aee9be230c95895c0029cb503f_King_Idle_1.png",
+        "sizes": "192x192"
+      }]
+}
