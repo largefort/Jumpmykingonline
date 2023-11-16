@@ -1,0 +1,2 @@
+var gdjs;(function(l){l.PixiFiltersTools.registerFilterCreator("MotionBlur",new class extends l.PixiFiltersTools.PixiFilterCreator{makePIXIFilter(r,e){return new PIXI.filters.MotionBlurFilter([0,0])}updatePreRender(r,e){}updateDoubleParameter(r,e,t){const i=r;e==="velocityX"?i._velocity.x=t:e==="velocityY"?i._velocity.y=t:e==="kernelSize"?i.kernelSize=t:e==="offset"&&(i.offset=t)}updateStringParameter(r,e,t){}updateBooleanParameter(r,e,t){}})})(gdjs||(gdjs={}));
+//# sourceMappingURL=motion-blur-pixi-filter.js.map
