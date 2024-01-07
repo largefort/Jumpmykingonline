@@ -1,2 +1,0 @@
-var gdjs;(function(a){a.PixiFiltersTools.registerFilterCreator("Sepia",new class extends a.PixiFiltersTools.PixiFilterCreator{makePIXIFilter(r,t){const e=new PIXI.ColorMatrixFilter;return e.sepia(!1),e}updatePreRender(r,t){}updateDoubleParameter(r,t,e){const i=r;t==="opacity"&&(i.alpha=a.PixiFiltersTools.clampValue(e,0,1))}updateStringParameter(r,t,e){}updateBooleanParameter(r,t,e){}})})(gdjs||(gdjs={}));
-//# sourceMappingURL=sepia-pixi-filter.js.map

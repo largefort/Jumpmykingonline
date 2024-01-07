@@ -169,7 +169,7 @@ for (var i = 0, k = 0, l = gdjs.GameCode.GDKingObjects4.length;i<l;++i) {
 gdjs.GameCode.GDKingObjects4.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18786852);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18850700);
 }
 }
 if (isConditionTrue_0) {
@@ -205,7 +205,7 @@ if(isConditionTrue_1) {
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18788060);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18851908);
 }
 }
 if (isConditionTrue_0) {
@@ -751,7 +751,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18806476);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(18870324);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("TutorialText"), gdjs.GameCode.GDTutorialTextObjects2);
@@ -882,6 +882,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("HighScore"), gdjs.GameCode.GDHighScoreObjects1);
+gdjs.copyArray(runtimeScene.getObjects("King"), gdjs.GameCode.GDKingObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Stars"), gdjs.GameCode.GDStarsObjects1);
 {for(var i = 0, len = gdjs.GameCode.GDHighScoreObjects1.length ;i < len;++i) {
     gdjs.GameCode.GDHighScoreObjects1[i].setString("Highscore: " + gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(1)));
@@ -895,6 +896,10 @@ gdjs.copyArray(runtimeScene.getObjects("Stars"), gdjs.GameCode.GDStarsObjects1);
 }{gdjs.evtTools.sound.preloadMusic(runtimeScene, "alexander-nakarada-battle-of-the-creek.mp3");
 }{gdjs.adMob.showBanner();
 }{gdjs.adMob.setupBanner("ca-app-pub-5816082932921993/1407667624", "ca-app-pub-5816082932921993/1407667624", false);
+}{for(var i = 0, len = gdjs.GameCode.GDKingObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDKingObjects1[i].getBehavior("AnimationBehavior").AnimationSystem("Smooth rotation", 1, 100, 100, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{gdjs.evtsExt__CursorType__ChangeCursorType.func(runtimeScene, "none", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 { //Subevents
 gdjs.GameCode.eventsList0(runtimeScene);} //End of subevents
@@ -914,8 +919,11 @@ gdjs.GameCode.eventsList18(runtimeScene);
 
 
 let isConditionTrue_0 = false;
-{
-}
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.advancedWindow.isKiosk(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.advancedWindow.setKiosk(true, runtimeScene);
+}}
 
 }
 
